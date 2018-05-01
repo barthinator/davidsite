@@ -1,0 +1,27 @@
+/* The main colors*/
+:root {
+  --main-bg-color: #2A3132;
+}
+
+/* override bootstrap navbar colors */
+.navbar,
+.navbar-default {
+  background-color: var(--main-bg-color);
+  color: red;
+}
+
+.navBrand {
+  color: white;
+}
+
+.navLink{
+  color: white;
+}
+
+.dropdown {
+  color: white;
+}
+
+.test {
+  color: red!important;
+}
