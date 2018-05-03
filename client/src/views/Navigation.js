@@ -38,16 +38,15 @@ class Navigation extends Component {
     };
 
     return (
-      <Navbar expand="sm" className="nav">
-      <NavbarBrand href="/" className="navBrand">David Bartholomew</NavbarBrand>
+      <Navbar expand="xs" className="nav">
       <NavbarToggler onClick={this.toggle} />
       <Collapse isOpen={this.state.isOpen} navbar>
-        <Nav className="ml-auto test" navbar>
+        <Nav className="mx-auto test" navbar>
           <NavItem>
             <NavLink className="navLink" tag={Link} to="/">Home</NavLink>
           </NavItem>
           <NavItem>
-            <NavLink className="navLink" tag={Link} to="/Project">Project</NavLink>
+            <NavLink className="navLink" tag={Link} to="/Project">Projects</NavLink>
           </NavItem>
           <NavItem>
             <NavLink className="navLink github" href="https://github.com/barthinator">GitHub</NavLink>
@@ -58,14 +57,14 @@ class Navigation extends Component {
             </DropdownToggle>
             <DropdownMenu right>
               <DropdownItem>
-                Project 1
+                Beam Forming
               </DropdownItem>
               <DropdownItem>
-                Project 2
+                Project Dvvy
               </DropdownItem>
               <DropdownItem divider />
               <DropdownItem>
-                Reset
+                Resume
               </DropdownItem>
             </DropdownMenu>
           </UncontrolledDropdown>

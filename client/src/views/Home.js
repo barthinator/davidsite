@@ -1,7 +1,8 @@
 import React, { Component } from "react";
-import { Jumbotron, Row, Col } from "reactstrap";
+import { Row, Col, Container } from "reactstrap";
 import Slider from '../components/Slider'
 import SvgTests from '../components/SvgTests.js';
+import './css/Home.css'
 
 class Home extends Component {
   state = { users: [] }
@@ -18,18 +19,7 @@ class Home extends Component {
     return (
       <div className="Home">
 
-        <Jumbotron>
-          <h1>David B.</h1>
-        </Jumbotron>
-
-        <Row>
-          <Col>.col</Col>
-          <Col>.col</Col>
-          <Col>.col</Col>
-          <Col>.col</Col>
-        </Row>
-
-        <SvgTests></SvgTests>
+        <h3>Hi I am David. I enjoy creating software, specifically websites and apps.</h3>
 
         {this.state.users.map(user =>
           <div key={user.id}>{user.username}</div>

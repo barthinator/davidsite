@@ -6,8 +6,10 @@
 /* override bootstrap navbar colors */
 .navbar,
 .navbar-default {
-  background-color: var(--main-bg-color);
-  color: red;
+  background-color: white;
+  max-width: 1000px;
+  border: 3px solid #000;
+  border-radius: 15px;
 }
 
 .navBrand {
@@ -15,11 +17,11 @@
 }
 
 .navLink{
-  color: white;
+  color: black;
 }
 
 .dropdown {
-  color: white;
+  color: black;
 }
 
 .test {
