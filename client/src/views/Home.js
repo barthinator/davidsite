@@ -1,8 +1,7 @@
 import React, { Component } from "react";
 import { Row, Col, Container } from "reactstrap";
-import Slider from '../components/Slider'
-import SvgTests from '../components/SvgTests.js';
 import './css/Home.css'
+import AnimateText from "../components/AnimateText"
 
 class Home extends Component {
   state = { users: [] }
@@ -19,6 +18,7 @@ class Home extends Component {
     return (
       <div className="Home">
 
+        <AnimateText name="test"></AnimateText>
         <h3>Hi I am David. I enjoy creating software, specifically websites and apps.</h3>
 
         {this.state.users.map(user =>
