@@ -57,4 +57,16 @@ module.exports = {
   resolve: {
     extensions: ['.js', '.jsx'],
   },
+
+  devServer: {
+    port: 8080,
+    proxy: {
+        '/users': {
+            target: 'http://localhost:3001',
+            secure: false,
+        }
+    },
+    historyApiFallback: true
+}
+
 };

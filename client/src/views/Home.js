@@ -6,13 +6,11 @@ import AnimateText from "../components/AnimateText"
 class Home extends Component {
   state = { users: [] }
 
-  /* To fetch the users from our express server
   componentDidMount() {
     fetch('/users')
       .then(res => res.json())
       .then(users => this.setState({ users }));
   }
-  */
 
   render() {
     return (
