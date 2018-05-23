@@ -1,0 +1,12 @@
+.project-box{
+  border: 2px solid black;
+  width: 300px;
+  height: 150px;
+}
+.project-image{
+  border: 2px solid red;
+  width: 100px;
+}
+.project-body{
+  border: 2px solid red;
+}

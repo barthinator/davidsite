@@ -1,18 +1,23 @@
 import React, { Component } from "react";
+import ProjectBox from "../components/ProjectBox.js"
+import { Row, Col, Container } from "reactstrap";
+import "./css/Project.css"
 
 class Project extends Component {
+
+  //Get database information
+
   render() {
     return (
       <div>
-        <h2>HELLO</h2>
-        <p>Cras facilisis urna ornare ex volutpat, et
-        convallis erat elementum. Ut aliquam, ipsum vitae
-        gravida suscipit, metus dui bibendum est, eget rhoncus nibh
-        metus nec massa. Maecenas hendrerit laoreet augue
-        nec molestie. Cum sociis natoque penatibus et magnis
-        dis parturient montes, nascetur ridiculus mus.</p>
-
-        <p>Duis a turpis sed lacus dapibus elementum sed eu lectus.</p>
+        <Row>
+          <Col>
+          <ProjectBox name="Test"></ProjectBox>
+          </Col>
+          <Col>
+          <ProjectBox name="Yes"></ProjectBox>
+          </Col>
+        </Row>
       </div>
     );
   }
