@@ -31,12 +31,6 @@ class Navigation extends Component {
 
   render() {
 
-    const divStyle = {
-      backgroundcolor: 'red',
-      color: "red",
-      textcolor: "red"
-    };
-
     return (
       <Navbar expand="xs" className="nav">
       <NavbarToggler onClick={this.toggle} />

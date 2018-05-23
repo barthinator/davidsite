@@ -12,6 +12,12 @@
   border-radius: 15px;
 }
 
+.navbar.hide {
+  transition: height 500ms 500ms, opacity 500ms 0ms;
+  opacity: 0.0;
+  height: 0px;
+}
+
 .navBrand {
   color: white;
 }

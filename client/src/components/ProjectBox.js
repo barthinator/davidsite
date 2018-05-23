@@ -1,4 +1,6 @@
 import React, { Component } from "react";
+import { Card, CardImg, CardText, CardBody,
+  CardTitle, CardSubtitle, Button } from 'reactstrap';
 
 class ProjectBox extends Component {
 
@@ -11,15 +13,16 @@ class ProjectBox extends Component {
 
   render() {
     return (
-      <div className="project-box">
-        <div className="project-image">
-          <img width="100px" height="100px" src="https://upload.wikimedia.org/wikipedia/commons/d/de/Windows_live_square.JPG"></img>
-        </div>
-        <div className="project-body">
-          <div className="project-header">
-            <h2>{this.state.name}</h2>
-          </div>
-        </div>
+      <div>
+        <Card>
+          <CardImg top src="https://placeholdit.imgix.net/~text?txtsize=33&txt=318%C3%97180&w=318&h=180" alt="Card image cap" />
+          <CardBody>
+            <CardTitle>{this.state.name}</CardTitle>
+            <CardSubtitle>Card subtitle</CardSubtitle>
+            <CardText>Some quick example text to build on the card title and make up the bulk of the card's content.</CardText>
+            <Button>Button</Button>
+          </CardBody>
+        </Card>
       </div>
     );
   }

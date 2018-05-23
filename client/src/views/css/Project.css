@@ -1,12 +1,10 @@
-.project-box{
-  border: 2px solid black;
-  width: 300px;
-  height: 150px;
+.project-container{
+  padding-left: 5%;
+  padding-right: 5%;
 }
-.project-image{
-  border: 2px solid red;
-  width: 100px;
-}
-.project-body{
-  border: 2px solid red;
+
+.card{
+  width: 200px;
+  margin: 10px;
+  border: 2px solid black!important;
 }

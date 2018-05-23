@@ -9,14 +9,11 @@ class Project extends Component {
 
   render() {
     return (
-      <div>
+      <div className="project-container">
         <Row>
-          <Col>
-          <ProjectBox name="Test"></ProjectBox>
-          </Col>
-          <Col>
-          <ProjectBox name="Yes"></ProjectBox>
-          </Col>
+          <ProjectBox name="Sidekick"></ProjectBox>
+          <ProjectBox name="Dvvy"></ProjectBox>
+          <ProjectBox name="Shewey"></ProjectBox>
         </Row>
       </div>
     );
