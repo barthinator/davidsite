@@ -1,15 +1,7 @@
-html,
-body {
-  background-color: #b56498;
-}
-
-footer {
-  padding-top: 2em;
-}
 
 .st1 {
   fill: none;
-  stroke: #eeeeee;
+  stroke: #000000;
   stroke-width: 7;
   stroke-linecap: round;
   stroke-miterlimit: 10;
