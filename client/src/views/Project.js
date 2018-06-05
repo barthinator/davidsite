@@ -6,12 +6,13 @@ import "./css/Project.css"
 class Project extends Component {
 
   //Get database information
-
   render() {
+
+
     return (
       <div className="project-container">
         <Row>
-          <ProjectBox name="Sidekick"></ProjectBox>
+          <ProjectBox name="Sidekick" subtitle="Employee Website Contributor" description="Worked on various frontend tasks utilizing the Django framework."></ProjectBox>
           <ProjectBox name="Dvvy"></ProjectBox>
           <ProjectBox name="Shewey"></ProjectBox>
         </Row>
