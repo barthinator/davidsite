@@ -3,8 +3,8 @@ import Styled from "styled-components";
 // This would be the container for the various Animations
 // We are trying out.
 
-export const color_purple = '#C26EFF';
-export const color_green = '#18FF92';
+export const color_purple = '#000';
+export const color_green = '#000';
 export const BgContainer = Styled.div`
     width: 60%;
     border: 1px solid ${color_green};
@@ -47,6 +47,10 @@ export const AnimeElement = Styled.div`
     border: 1px solid ${color_green};
     background: rgba(0,0,0,0);
     margin-top: 10px;
+`;
+export const AnimeText = Styled.h1`
+    text-align: center;
+    color: black;
 `;
 export const AnimeButton = Styled.button`
     display: block;

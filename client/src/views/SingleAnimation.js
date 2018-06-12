@@ -14,17 +14,17 @@ import {  BgContainer,
 const AnimateElement = (target, animate) => {
   console.log("Animate stuff")
   Anime.remove(target); // Stop and remove this element from current animation if present...
+  // bool ? this : that (if true this else that)
   let targetParent = target.parentNode;
   let animation = Anime({
     targets: target,
-    translateX: animate
-      ? `${targetParent.offsetWidth - target.offsetWidth}px`
-      : "0",
-    backgroundColor: animate ? '#18FF92' : 'rgba(0,0,0,0)',
-    scaleX: animate ? 0.13 : 1,
-    scaleY: animate ? 8 : 1,
-    duration: 1500,
-    elasticity: 600,
+    opacity: animate ? .5 : 1,
+    backgroundColor: animate ? '#000' : '#FFF',
+    borderRadius: animate ? ['0em', '2em'] : ['2em', '0em'],
+    easing: 'easeInOutQuad',
+    translateX: animate ? 250 : 0,
+    scale: animate ? 2 : 1,
+    rotate: animate ? 360 : 0
   });
 };
 
@@ -52,11 +52,10 @@ export default class SingleAnimation extends Component {
   render() {
     return (
       <div>
-        <BgContainer className="bg-container">
-          <PageTitleP1>Animating Single Elements</PageTitleP1>
+          <PageTitleP1>Simplicity</PageTitleP1>
           <Transition
             in={this.state.animate}
-            duration={1000}
+            duration={200}
             timeout={500}
             onEnter={() => { AnimateElement(this.AnimeElement, this.state.animate) }}
             onExit={() => { AnimateElement(this.AnimeElement, this.state.animate) }}>
@@ -70,7 +69,6 @@ export default class SingleAnimation extends Component {
               <AnimationButton handleClick={this.setOrReset} />
             </AnimationContainer>
           </Transition>
-        </BgContainer>
       </div>
     );
   }
