@@ -42,11 +42,8 @@ export const AnimationContainer = Styled.div`
 `;
 
 export const AnimeElement = Styled.div`
-    height: 30px;
-    width: 20%;
-    border: 1px solid ${color_green};
-    background: rgba(0,0,0,0);
-    margin-top: 10px;
+    height: 100%;
+    width: 100%;
 `;
 export const AnimeText = Styled.h1`
     text-align: center;

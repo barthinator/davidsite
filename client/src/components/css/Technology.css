@@ -1,0 +1,10 @@
+.technology{
+  height: 30px;
+  background-color: white;
+  color: white;
+  padding-left: 3px;
+  padding-right: 4px;
+  border: 2px black solid;
+  border-radius: 10px;
+  text-align: center;
+}
