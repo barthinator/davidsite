@@ -6,6 +6,7 @@ import Project from './views/Project';
 import Home from './views/Home';
 import Top from './views/Top';
 import SingleAnimation from "./views/SingleAnimation";
+import Sketch from "./views/Sketch";
 
 
 class App extends Component {
@@ -20,6 +21,7 @@ class App extends Component {
           <Route exact path="/" component={Home}/>
           <Route exact path="/Project" component={Project}/>
           <Route exact path="/single-animations" component={SingleAnimation} />
+          <Route exact path="/Sketch" component={Sketch} />
         </div>
       </Router>
     );

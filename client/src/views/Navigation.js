@@ -43,6 +43,9 @@ class Navigation extends Component {
             <NavLink className="navLink" tag={Link} to="/Project">Projects</NavLink>
           </NavItem>
           <NavItem>
+            <NavLink className="navLink" tag={Link} to="/Sketch">Sketches</NavLink>
+          </NavItem>
+          <NavItem>
             <NavLink className="navLink github" href="https://github.com/barthinator">GitHub</NavLink>
           </NavItem>
         </Nav>

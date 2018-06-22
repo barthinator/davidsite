@@ -20,8 +20,6 @@ class Project extends Component {
           <ProjectBox name="Hungry Coug" subtitle="APU Meal Plan Manager" description="Developed an HTML data retriever that allowed the main functionality of the app." technologies={["Swift", "Javascript"]}></ProjectBox>
           <ProjectBox name="Humans vs Zombies" subtitle="University Wide Game" description="Redesigned frontend of APU HVZ website, assisted in server and SQL issues too." technologies={["PHP", "HTML", "CSS", "SQL"]}></ProjectBox>
         </Row>
-
-        <P5Wrapper sketch={sketch} />
       </div>
     );
   }
