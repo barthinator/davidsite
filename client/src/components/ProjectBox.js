@@ -91,7 +91,7 @@ class ProjectBox extends Component {
           onExit={() => { AnimateElement(this.AnimeElement, this.state.animate)  }}>
           <AnimationContainer>
             <Card>
-              <CardImg top src="https://placeholdit.imgix.net/~text?txtsize=33&txt=318%C3%97180&w=318&h=180" alt="Card image cap" />
+              <CardImg top src={require("../img/" + this.state.name.replace(/\s/g, '') + ".png")} alt="Card image cap" />
                 <AnimeElement
                   id="anime-element"
                   innerRef={node => {

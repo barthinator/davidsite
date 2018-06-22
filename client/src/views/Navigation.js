@@ -45,23 +45,6 @@ class Navigation extends Component {
           <NavItem>
             <NavLink className="navLink github" href="https://github.com/barthinator">GitHub</NavLink>
           </NavItem>
-          <UncontrolledDropdown nav inNavbar>
-            <DropdownToggle className="dropdown" nav caret>
-              Portfolio
-            </DropdownToggle>
-            <DropdownMenu right>
-              <DropdownItem>
-                Beam Forming
-              </DropdownItem>
-              <DropdownItem>
-                Project Dvvy
-              </DropdownItem>
-              <DropdownItem divider />
-              <DropdownItem>
-                Resume
-              </DropdownItem>
-            </DropdownMenu>
-          </UncontrolledDropdown>
         </Nav>
       </Collapse>
       </Navbar>

@@ -36,11 +36,6 @@ class Home extends Component {
   //     .then(users => this.setState({ users }));
   // }
 
-  // <Anime opacity={[0, 1]} translateY={'1em'} delay={(e, i) => i * 1000}>
-  //   <h3>Hi, my name is David.</h3>
-  //     <p>I enjoy creating things, especially software</p>
-  // </Anime>
-
   componentDidMount(){
     this.setState({
       animate: !this.state.animate
@@ -77,10 +72,9 @@ class Home extends Component {
             innerRef={node => {
               this.AnimeText = node;
             }}
-          >Sometimes the best design, is the simplest</AnimeText>
+          >Sometimes the best design is the simplest.</AnimeText>
         </AnimationContainer>
       </Transition>
-
 
       </div>
     );
