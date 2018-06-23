@@ -30,10 +30,10 @@
     "bootstrap": "^4.1.0",
     "lodash": "^3.10.1",
     "npm": "^6.0.1",
+    "p5": "^0.6.1",
     "react": "^16.3.2",
     "react-anime": "^2.1.0",
     "react-dom": "^16.3.2",
-    "react-p5-wrapper": "0.0.4",
     "react-redux": "^5.0.7",
     "react-router-dom": "^4.2.2",
     "react-scripts": "1.1.4",
@@ -43,8 +43,8 @@
     "snapsvg-cjs": "0.0.6"
   },
   "scripts": {
-    "dev": "webpack-dev-server",
-    "build": "webpack"
+    "dev": "webpack-dev-server --mode=development",
+    "build": "webpack --mode-production"
   },
   "proxy": "http://localhost:3001"
 }

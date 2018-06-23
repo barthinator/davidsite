@@ -2,7 +2,6 @@ import React, { Component } from "react";
 import ProjectBox from "../components/ProjectBox.js";
 import { Row, Col, Container } from "reactstrap";
 import "./css/Project.css";
-import P5Wrapper from 'react-p5-wrapper';
 import sketch from "./sketch/sketch.js";
 
 class Project extends Component {

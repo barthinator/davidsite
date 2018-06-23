@@ -10,10 +10,13 @@ const paths = {
 };
 
 module.exports = {
-  entry: path.join(paths.JS, 'index.js'),
+  entry: {
+    index: './src/index.js',
+    another: './src/views/Sketch.js'
+  },
   output:{
-    path: paths.DIST,
-    filename: 'app.bundle.js'
+    filename: '[name].bundle.js',
+    path: path.resolve(__dirname, 'dist')
   },
 
   plugins: [
