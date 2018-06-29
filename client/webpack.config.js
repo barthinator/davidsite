@@ -11,8 +11,7 @@ const paths = {
 
 module.exports = {
   entry: {
-    index: './src/index.js',
-    another: './src/views/Sketch.js'
+    index: './src/index.js'
   },
   output:{
     filename: '[name].bundle.js',
