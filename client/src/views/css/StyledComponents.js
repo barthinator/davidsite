@@ -45,7 +45,7 @@ export const AnimeElement = Styled.div`
     height: 100%;
     width: 100%;
 `;
-export const AnimeText = Styled.h1`
+export const AnimeText = Styled.h2`
     text-align: center;
     color: black;
 `;

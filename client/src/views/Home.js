@@ -2,6 +2,8 @@ import React, { Component } from "react";
 import './css/Home.css'
 import Transition from 'react-transition-group/Transition';
 import AnimationButton from '../components/AnimationButton';
+import { Link } from 'react-router-dom';
+import { Row, Col, Container, NavLink } from "reactstrap";
 import {  BgContainer,
   PageTitleContainer,
   PageTitleSpan1,
@@ -60,21 +62,32 @@ class Home extends Component {
     return (
       <div className="Home">
 
+      <Row>
+
+      <Col sm="4">
+        <div className="profile">
+        </div>
+        <NavLink href="https://www.linkedin.com/in/davidbartholomewr/"><div className="linkedin-icon"></div></NavLink>
+      </Col>
+      <Col sm="8">
       <Transition
         in={this.state.animate}
         duration={1000}
         timeout={500}
         onEnter={() => { AnimateElement(this.AnimeText, this.state.animate) }}
         onExit={() => { AnimateElement(this.AnimeText, this.state.animate) }}>
-        <AnimationContainer>
-          <AnimeText
-            id="anime-element"
-            innerRef={node => {
-              this.AnimeText = node;
-            }}
-          >Sometimes the best design is the simplest.</AnimeText>
-        </AnimationContainer>
-      </Transition>
+          <AnimationContainer>
+            <AnimeText
+              id="anime-element"
+              innerRef={node => {
+                this.AnimeText = node;
+              }}
+            ><NavLink className="home" href="https://github.com/barthinator">DAVID BARTHOLOMEW</NavLink> IS A WEB AND APP DEVELOPER BASED IN CALIFORNIA.</AnimeText>
+          </AnimationContainer>
+        </Transition>
+        </Col>
+
+        </Row>
 
       </div>
     );

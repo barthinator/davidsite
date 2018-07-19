@@ -5,3 +5,40 @@ h3{
 p{
   text-align: center;
 }
+
+.Home{
+  margin-left: 15%;
+  margin-right: 15%;
+  margin-top: 65px;
+}
+
+.profile{
+  width: 250px;
+  height: 250px;
+  margin-top: 65px;
+  border: 1px rgba(204, 204, 204, 0.5) solid;
+  background: url('../../img/david.jpg');
+  background-size: cover;
+  background-position: center;
+  border-radius: 20px;
+}
+
+.linkedin-icon {
+  background: url('../../img/linkedin.png');
+  background-size: cover;
+  background-position: center;
+  width: 50px;
+  height: 50px;
+}
+
+.linkedin-icon:hover {
+  opacity: .75;
+}
+
+.profile:hover{
+  opacity: 0.75;
+}
+
+.name{
+  color: #003366;
+}

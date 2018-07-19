@@ -36,3 +36,15 @@
   margin-right: auto;
   text-align: center;
 }
+
+.bgHolder{
+  background: url('./img/Hawaii/ocean.jpg');
+  background-size: cover;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  width: 100%;
+  height: 35%;
+  z-index: -1;
+  opacity: 0.85;
+}
